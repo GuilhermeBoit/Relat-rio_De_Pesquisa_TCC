@@ -1,0 +1,18 @@
+{
+  "name": "Relat-rio_De_Pesquisa_TCC",
+  "version": "1.0.0",
+  "description": "relatorio para tcc",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GuilhermeBoit/Relat-rio_De_Pesquisa_TCC"
+  },
+  "author": "Bruno Verch and Guilherme Boit",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/GuilhermeBoit/Relat-rio_De_Pesquisa_TCC/issues"
+  }
+}
