@@ -1,54 +1,96 @@
 <html lang="pt-br">
 
 <head>
-<meta charset="UTF-8"/>
-<title>Formulário TCC</title>
+	<meta charset="UTF-8"/>
+	<title>Formulário TCC</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap-theme.min.css">
+	<style type="text/css">
+		form{
+			width: 90%;
+			margin: 0 auto;
+		}
+		h2{
+			text-align: center;
+		}
+		.btn{
+			margin: 0 auto;
+			margin-bottom: 30px;
+		}
+	</style>
 </head>
 
 <body>
-<fieldset id="tipo"><legend>1 – Tipo de Usuário</legend>
-<input type="radio" name="tipo" id="func"/> <label for="func">Funcionário<label/><br/>
-<input type="radio" name="tipo" id="visi"/> <label for="visi">Visitante</label><br/>
-<input type="radio" name="tipo" id="mora"/> <label for="mora">Morador</label><br/>
-</fieldset><br/><br/>
+	<form action="/" method="post">
+		<h2>Formulario</h2>
+		<br/>
+		<div class="form-group">
+			<label for="tipoDeUsuario">1 - Tipo de Usuário: </label>
+			<input type="text" class="form-control" name="tipoDeUsuario" />
+		</div>
+		<br/>
 
-<fieldset id="dados_usuario"><legend>2– Dados Usuário</legend><br/>
-Nome <input type="text" name="nome" id="id_nome" placeholder="Nome"/><br/><br/>
-Idade <input type="text" name="idade" id="id_idade" placeholder="Idade"/><br/><br/>
-</fieldset><br/><br/>
+		<div class="form-group">
+			<label>2 - Dados do Usuário: </label>
+			<div class="form-group">
+				<label for="nome">Nome: </label>
+				<input type="text" class="form-control" name="nome" />
+			</div>
+			<div class="form-group">
+				<label for="idade">Idade: </label>
+				<input type="text" class="form-control" name="idade" />
+			</div>
+		</div>
+		<br/>
 
-<fieldset><legend>3 – Com qual frequência você visita o zoológico(anual)? Porquê?</legend><br/>
-<input type="text" name="frequencia" id="id_frequencia" placeholder="Frêquencia, Porquê"/><br/><br/>
-</fieldset><br/><br/>
+		<div class="form-group">
+			<label for="frequencia">3 – Com qual frequência você visita o zoológico(anual)? Porquê?</label>
+			<textarea name="frequencia" class="form-control" id="frequencia" placeholder="Frêquencia, Porquê"></textarea>
+		</div>
+		<br/>
 
-<fieldset><legend>4 – Na sua concepção, qual é a função do zoológico?</legend><br/>
-<input type="text" name="funcao" id="id_funcao" placeholder="Função"/><br/><br/>
-</fieldset><br/><br/>
+		<div class="form-group">
+			<label for="frequencia">4 – Na sua concepção, qual é a função do zoológico?</label>
+			<textarea name="frequencia" class="form-control" id="frequencia" placeholder="Frêquencia, Porquê"></textarea>
+		</div>
+		<br/>
 
-<fieldset><legend>5– Quais os problemas que você identifica quando vem ao zoológico?</legend><br/>
-<input type="text" name="problema" id="id_problema" placeholder="Problemas"/><br/><br/>
-</fieldset><br/><br/>
+		<div class="form-group">
+			<label for="frequencia">5– Quais os problemas que você identifica quando vem ao zoológico?</label>
+			<textarea name="frequencia" class="form-control" id="frequencia" placeholder="Frêquencia, Porquê"></textarea>
+		</div>
+		<br/>
 
-<fieldset><legend>6 – Quando você vai ao zoológico você considera que aprende bastante sobre os animais e educação ambiental?</legend>
-<input type="radio" name="aprendizado" id="id_aprendizado1"/><label for="id_aprendizado1">Sim</label><br/>
-<input type="radio" name="aprendizado" id="id_aprendizado2"/><label for="id_aprendizado2">Não</label><br/>
-</fieldset><br/><br/>
+		<div class="form-group">
+			<label for="frequencia">6 – Quando você vai ao zoológico você considera que aprende bastante sobre os animais e educação ambiental?</label>
+			<input type="text" class="form-control" name="problema" id="id_problema" placeholder="Problemas"/>
+		</div>
+		<br/>
 
-<fieldset><legend>7 – Você considera o zoológico um lugar instigante a ponte de fazer você explorá-lo?</legend>
-<input type="radio" name="frequencia" id="id_frequencia1"/><label for="id_frequencia1">Sim</label><br/>
-<input type="radio" name="frequencia" id="id_frequencia2"/><label for="id_frequencia2">Não</label><br/>
-</fieldset><br/><br/>
+		<div class="form-group">
+			<label for="frequencia">7 – Você considera o zoológico um lugar instigante a ponte de fazer você explorá-lo?</label>
+			<input type="text" class="form-control" name="problema" id="id_problema" placeholder="Problemas"/>
+		</div>
+		<br/>
 
-<fieldset><legend>8 – Você gostaria de aprender dinamicamente sobre animais</legend>
-<input type="radio" name="aprender" id="id_aprender1"/><label for="id_aprender1">Sim</label><br/>
-<input type="radio" name="aprender" id="id_aprender2"/><label for="id_aprender2">Não</label><br/>
-</fieldset><br/><br/>
+		<div class="form-group">
+			<label for="frequencia">8 – Você gostaria de aprender dinamicamente sobre animais</label>
+			<input type="text" class="form-control" name="problema" id="id_problema" placeholder="Problemas"/>
+		</div>
+		<br/>
 
-<fieldset><legend>9 – As funcionalidades explicadas seriam uteis para você?</legend>
-<input type="radio" name="util" id="id_util1"/><label for="id_util1">Sim</label><br/>
-<input type="radio" name="util" id="id_util2"/><label for="id_util2">Não</label><br/>
-</fieldset><br/><br/>
+		<div class="form-group">
+			<label for="frequencia">9 – As funcionalidades explicadas seriam uteis para você?</label>
+			<input type="text" class="form-control" name="problema" id="id_problema" placeholder="Problemas"/>
+		</div>
+		<br/>
 
+		<button type="submit" class="btn btn-default">Salvar</button>
+
+	</form>
+
+	<script type="text/javascript" src="/bootstrap/js/bootstrap.min.js"></script>
 </body>
 
 </html>
