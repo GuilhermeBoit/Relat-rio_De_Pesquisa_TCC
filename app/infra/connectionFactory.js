@@ -5,7 +5,7 @@ var connectMYSQL = function () {
 			host: 'localhost',
 			user : 'root',
 			password : '',
-			database : ''
+			database : 'formulariotcc'
 		});
 }
 

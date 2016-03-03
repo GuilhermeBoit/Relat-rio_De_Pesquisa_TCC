@@ -3,7 +3,7 @@ function FormularioDAO(connection) {
 }
 
 FormularioDAO.prototype.salva = function (formulario,callback) {
-	this._connection.query('insert into  set ?',formulario,callback);
+	this._connection.query('insert into formulario set ?',formulario,callback);
 };
 
 module.exports = function () {
